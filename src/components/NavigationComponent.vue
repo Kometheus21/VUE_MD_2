@@ -1,5 +1,5 @@
 <template>
-  <nav id="navigaton" v-if="store.is_authenticated">
+  <nav id="navigaton" v-if="store.isLoggedIn">
     <ol>
       <li v-for="(link, index) in routes" :key="index">
         <router-link :to="link.path">{{ link.name }}</router-link>

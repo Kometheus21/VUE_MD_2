@@ -27,9 +27,9 @@ const router = createRouter({
 
 
 router.beforeEach((to, from) => {
-    if (!store.is_authenticated && to.path !== '/') {
+    if (!store.isLoggedIn && to.path !== '/') {
         return '/';
-    } else if (store.is_authenticated && to.path === '/') {
+    } else if (store.isLoggedIn && to.path === '/') {
         return from ? from.path : '/home'
     }
 })

@@ -5,11 +5,11 @@
       <h2>KRAKEN.FM</h2>
     </div>
     <div>
-      <div v-if="store.is_authenticated" class="user">
+      <div v-if="store.isLoggedIn" class="user">
         <span class="avatar"></span>
         <h3>{{ fullName }}</h3>
       </div>
-      <button @click="store.loginManager()">{{ store.is_authenticated ? 'LOGOUT' : 'LOGIN' }}</button>
+      <button @click="store.loginManager()">{{ store.isLoggedIn ? 'LOGOUT' : 'LOGIN' }}</button>
     </div>
   </div>
 </template>
