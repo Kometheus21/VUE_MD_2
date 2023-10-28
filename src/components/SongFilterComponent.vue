@@ -15,6 +15,7 @@ export default {
     onFilterChanged: Function,
   },
   setup(props) {
+    
     const activeFilter = ref('None');
 
     const applyFilter = (filter) => {

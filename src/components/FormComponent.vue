@@ -11,7 +11,7 @@
       </div>
       <div>
         <label for="studentCode">Student code</label>
-        <input type="text" id="studentCode" v-model="user.code" :disabled="true" />
+        <input type="text" id="studentCode" v-model="user.code" :disabled="disabled" />
       </div>
       <div>
         <label for="loggedAt">Logged in at</label>

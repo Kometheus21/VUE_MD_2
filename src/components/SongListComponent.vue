@@ -23,6 +23,7 @@ import { ref, computed, onMounted } from 'vue';
 import {store} from '../store.js'; 
 
 export default {
+  
   setup() {
     const songs = ref(store.all_songs);
     const activeFilter = ref('None');

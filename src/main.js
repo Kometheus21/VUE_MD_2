@@ -13,6 +13,7 @@ import FormComponent from './components/FormComponent.vue'
 
 const app = createApp(App)
 
+
 app
     .component('HeaderComponent', HeaderComponent)
     .component('NavigationComponent', NavigationComponent)
@@ -24,3 +25,4 @@ app
 
 app.use(router)
 app.mount('#app')
+
